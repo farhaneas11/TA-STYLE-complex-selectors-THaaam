@@ -1,0 +1,459 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: wheat;    
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+*::before,*::after {
+box-sizing: border-box;
+}
+/* container */
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+/*    flex   */
+.flex { 
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-content {
+    display: flex;
+    justify-content: space-between;
+}
+.align-items {
+    align-items: center;
+}
+.justify-space {
+    display: flex;
+    justify-content: space-evenly;
+}
+.center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* hover */
+body button:hover{
+    color: wheat;
+}
+body a:hover{
+    color: wheat;
+}
+body li a:hover{
+    color:wheat;
+}
+ /*   width and sizes     */
+ .img-size {         
+    width: 850px;
+    text-align: center;
+    position: relative;
+    margin-left: 11%;
+}
+
+.width-45 {
+    width: 45%;
+}
+.text-center {
+    text-align: center;
+}
+
+.width-35{
+    width: 35%;
+}
+.width-20{
+    width: 20%;
+}
+
+/* header */
+header {
+    background-color: rgb(89,191,194);
+}
+li {
+    margin-right: 1.5rem;
+}
+li a {
+    font-size: 1.1rem;
+    color: white;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+/* ONE */
+.one {
+    background-color:rgb(89,191,194) ;
+    height: 64vh;
+    padding: 2rem 0;
+}
+.box-one{
+    text-align: center;
+    width: 500px;
+    margin-left: 25%;
+}
+h1 {
+    font-size: 3.2rem;
+    color: white;
+    font-weight: 700;
+    
+}
+.button-one {
+    border: none;
+    color: rgb(49,67,119);
+    background-color: white;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 1rem 1.7rem;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+}
+
+img{
+    width: 100%;
+    height: 550px;
+    box-shadow: 0 px 5px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* TWO  */
+
+.two {
+    height: 25vh;
+    margin-top: 14%;
+}
+.img-two {
+    margin-right: 0.3rem;
+    width: auto;
+    padding: 0.5rem ;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(191,202,225);
+    width: 200px;
+}
+.img-two img{
+    width: 40px;
+    height: 40px;
+    margin-right: 1.2rem;
+}
+div:empty {
+    border-bottom: 3px solid rgb(191,202,225);
+    font-size: 0%;
+    margin-top: 3rem;
+}
+
+/* THREE */
+.three {
+    height: 45vh;
+}
+.h4-p h4{
+    font-size:2.8rem ;
+    font-weight: 500;
+    color: rgb(40,62,125);
+    margin-bottom: 1rem;
+}
+.h4-p p {
+    font-size: 1.4rem;
+    line-height: 30px;
+    color:rgb(107,128,173) ;
+    font-weight: 500;
+    margin-bottom: 1.9rem;
+}
+
+.img-three img{
+    width: 100%;
+    height: 280px;
+}
+.position-button{
+    position: relative;
+    height: 90px;
+    width: 200px;
+}
+.shaping {   
+     
+    position: relative;
+    padding: 1.0rem 2rem;
+    background-color: rgb(40,62,125);
+    color: rgb(211, 205, 205);
+    margin-left: 30px;
+}
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 31px solid white;
+	border-bottom: 25px solid transparent;
+    position:absolute;
+    left: 30px;
+    top: -15px;
+    z-index: 1;
+}
+.triangle-right-colour {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 48px solid rgb(40,62,125);
+	border-bottom: 25px solid transparent;
+    position: absolute;
+    right: -14%;
+    top: -17px;
+}
+/* FOUR */
+h4 {
+    font-size:2.8rem ;
+    font-weight: 600;
+    color: rgb(40,62,125);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+table{
+    border: 1px solid rgba(247, 248, 250, 0.897);    
+    width: 100%;
+}
+
+.head-table {
+    background-color:rgb(89,191,194) ;
+    border: none;
+    border-end-end-radius: 10px;
+}
+.head-table th {
+    color: white;
+    font-size: 1.2rem;
+    padding:0.8rem 1rem;
+    text-align: left;
+}
+td {
+    border: 1px solid rgb(109,112,119);
+    padding:0.8rem 1rem;
+    color: rgb(109,112,119);
+    font-size: 1.1rem;
+}
+tr:nth-child(2n){
+    background-color: rgb(213,229,229);    
+}
+/* FIVE */
+.five {
+    margin: 2rem 0;
+}
+.five-margin {
+    margin-bottom: 2rem;
+}
+h5{
+    font-size:2.7rem ;
+    font-weight: 500;
+    color: rgb(40,62,125);
+    margin-bottom: 1rem;        
+}
+
+span {
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.cir {
+    width: 60px;
+    height: 25px;
+    border-radius: 30px;
+    background-color:rgb(24, 53, 136) ;
+    margin-left: 47%;
+    position: relative;
+}
+.cir1 {
+    left: 6%;
+    top: 8%;
+    padding: 0.3rem 0.6rem;
+    position: absolute;
+    border-radius: 20px;
+    background-color:rgb(170, 177, 177) ;
+    font-size: 10px;
+    
+}
+
+.box-five {
+    width: 100%;
+}
+.box-five-size {
+    padding: 1rem 1rem;
+    border: 2px solid rgba(224, 219, 219, 0.658);
+    border-radius: 20px;
+}
+
+h5{
+    font-size:2.8rem ;
+    font-weight: 600;
+    color: rgb(40,62,125);
+    margin-bottom: 2rem;
+}
+p{
+    font-size: 1.5rem;
+    color:  rgb(118,137,179);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+span em{
+    color: rgb(89,191,194);
+    font-size: 3rem;
+    font-weight: 600;
+    margin:0 0.5rem;
+}
+span::before{
+    content: "$";
+    color:rgb(89,191,194) ;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+span::after{
+    content: "/month";
+    color: black;
+    font-size: 1.2rem;
+}
+.five-ul{
+    padding: 0.5rem 1.8rem;
+}
+.five-ul li{
+    list-style-image:url('/block-BHaacs/assets/tick.png');
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    color:rgb(75,90,129) ;
+}
+.five-ul .wrong-li{
+    list-style-image:url('/block-BHaacs/assets/cross.png');
+}
+.five-button{
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    color: black;
+    border: 1px solid rgb(170, 177, 177) ;
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: 600;
+}
+.five-button-colour{
+    background-color: rgb(89,191,194);
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 600;
+}
+ /* SIX  */
+ .six{
+     margin: 1.5rem 0;
+ }
+ .six-backcolor {
+     background-color: rgb(89,191,194);
+     width: 100%;
+     border-radius: 20px;
+     height: 40vh;
+ }
+ .six-h5 {
+     font-size: 3rem;
+     color: white;
+     font-weight: 600;
+ }
+ .button-six{
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    color: black;
+    border: 1px solid rgb(170, 177, 177) ;
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 600;
+ }
+ /* FOOTER */
+ footer{
+     margin: 2rem 0;
+ }
+ h6{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(24, 53, 136);
+    margin-bottom: 1rem;
+ }
+ footer p{
+     font-size: 1.2rem;
+ }
+ .footer-ul li a{
+    font-size: 1.2rem;
+    color:  rgb(118,137,179);
+    font-weight: 500;
+    margin-bottom: 1rem;
+ }
+ .footer-ul li{
+     margin: 1rem 0;
+ }
+
+ .ai-ai i{
+     padding: 0.5rem 0.5rem;
+     background-color: rgb(170, 177, 177);
+     color: rgb(24, 53, 136);
+     font-size: 1rem;
+ }
